@@ -20,7 +20,7 @@ public class Scheduling {
 					Processes p = new Processes();
 					Schedule.pool().add(p);
 					try {
-						Thread.sleep(TimeUnit.SECONDS.toMillis(3));
+						Thread.sleep(TimeUnit.SECONDS.toMillis(30));
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -38,7 +38,7 @@ public class Scheduling {
 				while (true) {
 					Schedule.pool().request();
 					try {
-						Thread.sleep(TimeUnit.SECONDS.toMillis(2));
+						Thread.sleep(TimeUnit.SECONDS.toMillis(25));
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -55,7 +55,7 @@ public class Scheduling {
 				while (true) {
 					Schedule.pool().inactivity();
 					try {
-						Thread.sleep(TimeUnit.SECONDS.toMillis(8));
+						Thread.sleep(TimeUnit.SECONDS.toMillis(80));
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
