@@ -18,7 +18,7 @@ public class CoordinatorScheduling {
 				while (true) {
 					Coordinator.pool().remove();
 					try {
-						Thread.sleep(TimeUnit.SECONDS.toMillis(100));
+						Thread.sleep(TimeUnit.SECONDS.toMillis(10));
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -27,5 +27,4 @@ public class CoordinatorScheduling {
 			}
 		};
 	}
-
 }
